@@ -69,61 +69,40 @@ header.scrolled .logo img {
  
 }
 
-/*bote*/
-.bote{
-    padding: 8px 15px;
-    background-color: rgb(28, 141, 239);
-    color: #ffffff;
-    border-radius: 60px;
-    text-decoration: none;
-    position: absolute;
-    overflow: hidden;
-    margin-top: 5px;
-    
-   
+/*btn-contato*/
+
+.button{
+  padding: 10px 23px;
+  background-color: #0f8cd5;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 
-.bote::before{
-    content: '';
-    background-color: chartreuse;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: var(--eixoY);
-    left: var(--eixoX);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width .5s, height .5s;
+.button span{
+  font-size: 12px;
+  position: relative;
+  z-index: 999999;
 }
 
-.bote span{
-    color: #fff;
-    font-size: 16px;
-    margin-left: -70px;
-    margin-top: -10px;
-    position: absolute;
-    overflow: hidden;
-    border: none;
+.button::before{
+  content: '';
+  background-color: #e0d61a;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: var(--eixoY);
+  left: var(--eixoX);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width .5s, height .5s;
 }
 
-.bote span:hover{
-    color: var(--segund-bg-color);
-}
-
-
-.bote:hover::before{
-    width: 1000px;
-    height: 1000px;
-}
-
-
-.btn-contato {
-   background-color: rgb(19, 130, 233);
-  color: white; 
-  padding: 8px 15px;
-  border-radius: 10px; text-decoration: none;
- 
-    
+.button:hover::before{
+  width: 1000px;
+  height: 1000px;
 }
 
 /* Hamburguer */
@@ -143,13 +122,38 @@ header.scrolled .logo img {
     height: 600px; 
     object-fit: cover; 
 }
-.redes-sociais {
-  position: absolute; bottom: 20px; left: 50%;
+.social-media {
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%;
   transform: translateX(-50%);
-  display: flex; gap: 20px;
+  display: flex;
+  gap: 10px;
+
+  
 }
-.redes-sociais a { 
-    font-size: 28px; color: white; text-decoration: none; 
+.social-media a { 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+    font-size: 28px; 
+    color: white; 
+    text-decoration: none; 
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: .2rem solid #1e91e9;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #030303;
+    margin: 3rem 1rem 1rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+  background: #1e91e9;
+  color: #efe816;
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 /* CARROSSEL */
