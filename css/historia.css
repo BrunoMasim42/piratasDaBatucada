@@ -1,0 +1,35 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+
+  header{
+    background-color: rgb(229, 190, 37);
+  }
+
+  .pagina{
+    display: block;
+    width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px -4px rgba(5, 5, 5, 0.45);
+    
+  }
+
+  p.textoini{
+    width: 900px;
+    align-items: center;
+    text-align: justify;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
