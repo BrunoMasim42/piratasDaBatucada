@@ -33,3 +33,27 @@
     text-align: center;
     margin-top: 20px;
   }
+
+
+  /* RESPONSIVO */
+@media (max-width: 900px) {
+    .menu { 
+        display: none; flex-direction: column; background: #111; position: absolute; top: 60px; left: 0; width: 100%; padding: 20px; }
+    .menu li { 
+        margin: 10px 0; }
+    .menu.show {
+         display: flex; }
+    .menu-toggle { 
+        display: block; }
+    .btn-contato { 
+        display: none; }
+    
+    .pagina{
+        width: 400px;
+    }
+
+    p.textoini{
+        width: 300px;
+    }
+  }
+  
